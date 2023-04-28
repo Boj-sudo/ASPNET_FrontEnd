@@ -47,18 +47,18 @@
                         </section>
 
                         <section class="food-area section-padding">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="section-top">
-                                            <h2><span class="style-change">we serve delicious food</span></h2>
-                                            <p class="pt-3">They're fill divide i their yielding our after have him fish on there for greater man moveth, moved Won't together isn't for fly divide mids fish firmament on net.</p>
-                                        </div>
-                                    </div>
+                            <div class="site-section" id="products-section">
+                              <div class="container">
+                                <div class="row mb-5 justify-content-center">
+                                  <div class="col-md-6 text-center">
+                                    <h3 class="section-sub-title">Popular Products</h3>
+                                    <h2 class="section-title mb-3">Our Products</h2>
+                                    <p>you won't regret exploring quality school uniforms.</p>
+                                  </div>
+                                </div>  
                                 </div>
                                 <div class="row" id="_product" runat="server">
-
-                                </div>
+                              </div>
                             </div>
                         </section>
                     </div>
