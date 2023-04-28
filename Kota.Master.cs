@@ -11,7 +11,7 @@ namespace ASPNET_FrontEnd
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Name"] != null)
+            if (Session["Firstname"] != null)
             {
                 loginlink.Visible = false;
                 registerlink.Visible = false;

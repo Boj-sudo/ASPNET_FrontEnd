@@ -82,7 +82,7 @@
                                     </ul>
                                 </li>
 
-                                <li class="cart"><a href="Cart.aspx" id="cart" runat="server"><i class="icon-shopping-cart"></i> Cart [<%=Session["Cartitems"]%>]</a></li>
+                                <li class="cart"><a href="Cart.aspx" id="cart" runat="server"><i class="icon-shopping-cart"></i>Cart [<%=Session["Cartitems"]%>]</a></li>
                                 <li class="logout area"><a href="Logout.aspx" id="LogoutLink" visible="false" runat="server">Logout</a></li>
                             </ul>
                         </nav>
@@ -93,11 +93,11 @@
         </header>
     </div>
 
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-<footer class="site-footer">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <footer class="site-footer">
         <div class="row text-center">
             <div class="col-md-12">
                 <p class="copyright">

@@ -61,7 +61,8 @@ namespace ASPNET_FrontEnd
             }
             else
             {
-
+                lbl_error.Text = "Password do not match, please try again.";
+                lbl_error.Visible = true;
             }
         }
     }

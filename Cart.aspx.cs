@@ -20,9 +20,9 @@ namespace ASPNET_FrontEnd
             string show = " ";
             string id = Request.QueryString["Id"];
 
-            Session["item"] = id;
+            Session["Item"] = id;
 
-            if (Session["Name"] == null)
+            if (Session["Firstname"] == null)
             {
                 Response.Redirect("Login.aspx");
             }
@@ -77,9 +77,9 @@ namespace ASPNET_FrontEnd
 
                     if (add == true)
                     {
-                        int new_item = Convert.ToInt32((Session["cartItems"]).ToString());
+                        int new_item = Convert.ToInt32((Session["Item"]).ToString());
                         new_item += 1;
-                        Session["cartItems"] = new_item;
+                        Session["Item"] = new_item;
                         Response.Redirect("Shop.aspx");
                     }
                 }
