@@ -82,7 +82,7 @@
                                     </ul>
                                 </li>
 
-                                <li class="cart"><a href="Cart.aspx" id="cart" runat="server"><i class="icon-shopping-cart"></i>Cart [<%=Session["Cartitems"]%>]</a></li>
+                                <li class="cart"><a href="Cart.aspx" id="cart" runat="server"><i class="icon-shopping-cart"></i>Cart [<%=Session["Item"]%>]</a></li>
                                 <li class="logout area"><a href="Logout.aspx" id="LogoutLink" visible="false" runat="server">Logout</a></li>
                             </ul>
                         </nav>

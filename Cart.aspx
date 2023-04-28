@@ -33,7 +33,8 @@
                     <div class="cart_buttons d-flex flex-row align-items-start justify-content-start">
                         <div class="cart_buttons_inner ml-sm-auto d-flex flex-row align-items-start justify-content-start flex-wrap">
                             <div><a href="clearCart.aspx" class="btn btn-warning py-3 px-4">clear cart</a></div>
-                            <br />
+                            &nbsp
+                            &nbsp
                             <div><a href="Shop.aspx" class="btn btn-warning py-3 px-4">continue shopping</a></div>
                         </div>
                     </div>

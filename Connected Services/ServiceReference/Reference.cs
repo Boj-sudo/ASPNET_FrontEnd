@@ -510,7 +510,7 @@ namespace ASPNET_FrontEnd.ServiceReference {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
+        private int IDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int QuantityField;
@@ -526,14 +526,14 @@ namespace ASPNET_FrontEnd.ServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
+        public int ID {
             get {
-                return this.IdField;
+                return this.IDField;
             }
             set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
                 }
             }
         }

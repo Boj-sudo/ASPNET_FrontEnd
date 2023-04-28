@@ -18,7 +18,7 @@ namespace ASPNET_FrontEnd
             double vat = 0.15;
             string display = " ";
             string show = " ";
-            string id = Request.QueryString["Id"];
+            string id = Request.QueryString["ID"];
 
             Session["Item"] = id;
 
@@ -30,9 +30,10 @@ namespace ASPNET_FrontEnd
             {
                 show += "<table class='table'>";
                 show += "<thead class='thead-primary'>";
-                show += "<tr class='text-center'>";
+                show += "<tr class='text-center' style='color: white'>";
                 show += "<th>&nbsp;</th>";
                 show += "<th>&nbsp;</th>";
+                show += "<th>Product image</th>";
                 show += "<th>Product name</th>";
                 show += "<th>Price</th>";
                 show += " <th>Quantity</th>";
@@ -47,10 +48,10 @@ namespace ASPNET_FrontEnd
 
                     foreach (CartItems c in new_item)
                     {
-                        var _product = sr.AboutProduct(Convert.ToString(c.Id));
+                        var _product = sr.AboutProduct(Convert.ToString(c.ID));
                         double _total = Convert.ToInt32(_product.Price * c.Quantity);
 
-                        show += "<tr class='text-center'>";
+                        show += "<tr class='text-center' style='color: white'>";
                         show += "<td class='product-remove'><a href = '#' ><span class='ion-ios-close'></span></a></td>";
                         show += "<td><img src = '" + _product.Image + "'class='img-fluid' alt='' width='150' Height='150'></td>";
                         show += "<td class='product-name'>";
@@ -69,7 +70,7 @@ namespace ASPNET_FrontEnd
                 {
                     CartItems items = new CartItems
                     {
-                        Id = Convert.ToInt32(Session["Item"]),
+                        ID = Convert.ToInt32(Session["Item"]),
                         Quantity = count
                     };
 
