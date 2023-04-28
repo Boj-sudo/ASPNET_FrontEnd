@@ -44,6 +44,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -102,6 +104,25 @@
     <Content Include="Cart.aspx" />
     <Content Include="CheckOut.aspx" />
     <Content Include="ClearCart.aspx" />
+    <Content Include="Connected Services\ServiceReference\ASPNET_FrontEnd.ServiceReference.Product.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference\ASPNET_FrontEnd.ServiceReference.productTable.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference\ASPNET_FrontEnd.ServiceReference.User.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference\ASPNET_FrontEnd.ServiceReference.CartItems.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServiceReference\BackEnd.disco" />
+    <None Include="Connected Services\ServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="css\aos.css" />
     <Content Include="css\bootstrap-datepicker.css" />
     <Content Include="css\bootstrap.min.css" />
@@ -153,7 +174,6 @@
     <Content Include="Logout.aspx" />
     <Content Include="Manager.aspx" />
     <Content Include="Register.aspx" />
-    <Content Include="RemoveCart.aspx" />
     <Content Include="RemoveProduct.aspx" />
     <Content Include="Search.aspx" />
     <Content Include="SearchProduct.aspx" />
@@ -211,6 +231,11 @@
     </Compile>
     <Compile Include="ClearCart.aspx.designer.cs">
       <DependentUpon>ClearCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="DeleteProduct.aspx.cs">
       <DependentUpon>DeleteProduct.aspx</DependentUpon>
@@ -276,13 +301,6 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RemoveCart.aspx.cs">
-      <DependentUpon>RemoveCart.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RemoveCart.aspx.designer.cs">
-      <DependentUpon>RemoveCart.aspx</DependentUpon>
-    </Compile>
     <Compile Include="RemoveProduct.aspx.cs">
       <DependentUpon>RemoveProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -344,6 +362,16 @@
     <Content Include="css\.DS_Store" />
     <Content Include="css\bootstrap.min.css.map" />
     <Content Include="Kota.Master" />
+    <None Include="Connected Services\ServiceReference\BackEnd.wsdl" />
+    <None Include="Connected Services\ServiceReference\BackEnd.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference\BackEnd1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference\BackEnd2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
     <Content Include="scss\.DS_Store" />
     <Content Include="scss\bootstrap\.DS_Store" />
@@ -446,6 +474,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
