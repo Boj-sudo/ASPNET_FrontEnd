@@ -15,7 +15,7 @@
             </div>
         </div>
 
-        <div class="site-section-cover overlay img-bg-section" style="background-image: url('images/hero_2.jpg');">
+        <div class="site-section-cover overlay img-bg-section" style="background-image: url('images/hero_2.png');">
             <div class="container">
                 <div class="row align-items-center justify-content-center text-center">
                     <div class="col-md-12 col-lg-8">
@@ -33,19 +33,6 @@
             <div class="row mb-5 justify-content-center">
                 <div class="col-md-7 text-center">
                     <div class="block-heading-1" data-aos="fade-up" data-aos-delay="">
-
-
-                        <section class="banner-area text-center">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <h6>The most interesting food in the world</h6>
-                                        <h2>Discover the <span class="prime-color">flavors <class="style-change">of <span class="prime-color">food</span>fun</span></h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
                         <section class="food-area section-padding">
                             <div class="site-section" id="products-section">
                               <div class="container">
@@ -53,11 +40,12 @@
                                   <div class="col-md-6 text-center">
                                     <h3 class="section-sub-title">Popular Products</h3>
                                     <h2 class="section-title mb-3">Our Products</h2>
-                                    <p>you won't regret exploring quality school uniforms.</p>
+                                    <p>you won't regret exploring the most delicious kota kings in South Afrika.</p>
                                   </div>
                                 </div>  
                                 </div>
                                 <div class="row" id="_product" runat="server">
+
                               </div>
                             </div>
                         </section>

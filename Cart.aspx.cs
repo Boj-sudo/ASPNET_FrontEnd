@@ -33,7 +33,6 @@ namespace ASPNET_FrontEnd
                 show += "<tr class='text-center' style='color: white'>";
                 show += "<th>&nbsp;</th>";
                 show += "<th>&nbsp;</th>";
-                show += "<th>Product image</th>";
                 show += "<th>Product name</th>";
                 show += "<th>Price</th>";
                 show += " <th>Quantity</th>";

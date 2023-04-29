@@ -14,7 +14,7 @@ namespace ASPNET_FrontEnd
         protected void Page_Load(object sender, EventArgs e)
         {
             sr.clearCart();
-            Session["Items"] = 0;
+            Session["Item"] = 0;
             Response.Redirect("Cart.aspx");
         }
     }
